@@ -49,8 +49,8 @@ public class ButtonTextProgress extends LinearLayout {
         progressBar = view.findViewById(R.id.progressBar);
     }
 
+    //init views from xml
     private void initAction() {
-        //init views from xml
         btnConfirm.setText(model.getTxtConfirm());
         txtTitle.setText(model.getTxtTitle());
         switch (model.getVisibility()) {
@@ -71,6 +71,8 @@ public class ButtonTextProgress extends LinearLayout {
         }
     }
 
+
+    //init views from java
     public void setBtnConfirmText(String text) {
         btnConfirm.setText(text);
     }
